@@ -1,0 +1,179 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"21 ./LCD.h
+[; ;./LCD.h: 21:     void SetLine (char line);
+[v _SetLine `(v ~T0 @X0 0 ef1`uc ]
+"19
+[; ;./LCD.h: 19:     void SendLCD(unsigned char Byte, char type);
+[v _SendLCD `(v ~T0 @X0 0 ef2`uc`uc ]
+"16 ./eusart.h
+[; ;./eusart.h: 16:     char getCharSerial(void);
+[v _getCharSerial `(uc ~T0 @X0 0 ef ]
+"22 ./LCD.h
+[; ;./LCD.h: 22:     void LCD_String(char *string);
+[v _LCD_String `(v ~T0 @X0 0 ef1`*uc ]
+"11 RFID.c
+[; ;RFID.c: 11: char currentVal = 0;
+[v _currentVal `uc ~T0 @X0 1 e ]
+[i _currentVal
+-> -> 0 `i `uc
+]
+"12
+[; ;RFID.c: 12: char checkSum = 0;
+[v _checkSum `uc ~T0 @X0 1 e ]
+[i _checkSum
+-> -> 0 `i `uc
+]
+"13
+[; ;RFID.c: 13: char index = 1;
+[v _index `uc ~T0 @X0 1 e ]
+[i _index
+-> -> 1 `i `uc
+]
+"14
+[; ;RFID.c: 14: char a;
+[v _a `uc ~T0 @X0 1 e ]
+"16
+[; ;RFID.c: 16: void sendRFID(void) {
+[v _sendRFID `(v ~T0 @X0 1 ef ]
+{
+[e :U _sendRFID ]
+[f ]
+"17
+[; ;RFID.c: 17:     SetLine(1);
+[e ( _SetLine (1 -> -> 1 `i `uc ]
+"18
+[; ;RFID.c: 18:     SendLCD(0b00000001,0);
+[e ( _SendLCD (2 , -> -> 1 `i `uc -> -> 0 `i `uc ]
+"19
+[; ;RFID.c: 19:     a = getCharSerial();
+[e = _a ( _getCharSerial ..  ]
+"20
+[; ;RFID.c: 20:     if (a == 0x02) {
+[e $ ! == -> _a `i -> 2 `i 2  ]
+{
+"21
+[; ;RFID.c: 21:         while (a != 0x0A) {
+[e $U 3  ]
+[e :U 4 ]
+{
+"22
+[; ;RFID.c: 22:             a = getCharSerial();
+[e = _a ( _getCharSerial ..  ]
+"23
+[; ;RFID.c: 23:             if (index <= 12) {
+[e $ ! <= -> _index `i -> 12 `i 6  ]
+{
+"24
+[; ;RFID.c: 24:                 SendLCD(a, 1);
+[e ( _SendLCD (2 , -> _a `uc -> -> 1 `i `uc ]
+"28
+[; ;RFID.c: 28:                 if (a > 64) {
+[e $ ! > -> _a `i -> 64 `i 7  ]
+{
+"30
+[; ;RFID.c: 30:                     a = a - 55;
+[e = _a -> - -> _a `i -> 55 `i `uc ]
+"32
+[; ;RFID.c: 32:                 } else {
+}
+[e $U 8  ]
+[e :U 7 ]
+{
+"34
+[; ;RFID.c: 34:                     a = a - 48;
+[e = _a -> - -> _a `i -> 48 `i `uc ]
+"35
+[; ;RFID.c: 35:                 }
+}
+[e :U 8 ]
+"37
+[; ;RFID.c: 37:                 currentVal = (a | currentVal);
+[e = _currentVal -> | -> _a `i -> _currentVal `i `uc ]
+"39
+[; ;RFID.c: 39:                 if (index % 2 == 1) {
+[e $ ! == % -> _index `i -> 2 `i -> 1 `i 9  ]
+{
+"41
+[; ;RFID.c: 41:                     currentVal = currentVal << 4;
+[e = _currentVal -> << -> _currentVal `i -> 4 `i `uc ]
+"43
+[; ;RFID.c: 43:                 } else {
+}
+[e $U 10  ]
+[e :U 9 ]
+{
+"45
+[; ;RFID.c: 45:                     if (index < 11) {
+[e $ ! < -> _index `i -> 11 `i 11  ]
+{
+"47
+[; ;RFID.c: 47:                         checkSum = checkSum^currentVal;
+[e = _checkSum -> ^ -> _checkSum `i -> _currentVal `i `uc ]
+"49
+[; ;RFID.c: 49:                     } else {
+}
+[e $U 12  ]
+[e :U 11 ]
+{
+"51
+[; ;RFID.c: 51:                         if (checkSum == currentVal) {
+[e $ ! == -> _checkSum `i -> _currentVal `i 13  ]
+{
+"53
+[; ;RFID.c: 53:                             SetLine(2);
+[e ( _SetLine (1 -> -> 2 `i `uc ]
+"55
+[; ;RFID.c: 55:                             LCD_String("Match");
+[e ( _LCD_String (1 :s 1C ]
+"57
+[; ;RFID.c: 57:                         } else {
+}
+[e $U 14  ]
+[e :U 13 ]
+{
+"59
+[; ;RFID.c: 59:                             SetLine(2);
+[e ( _SetLine (1 -> -> 2 `i `uc ]
+"61
+[; ;RFID.c: 61:                             LCD_String("No Match");
+[e ( _LCD_String (1 :s 2C ]
+"63
+[; ;RFID.c: 63:                         }
+}
+[e :U 14 ]
+"64
+[; ;RFID.c: 64:                     }
+}
+[e :U 12 ]
+"66
+[; ;RFID.c: 66:                     currentVal = 0;
+[e = _currentVal -> -> 0 `i `uc ]
+"68
+[; ;RFID.c: 68:                 }
+}
+[e :U 10 ]
+"70
+[; ;RFID.c: 70:                 index = index + 1;
+[e = _index -> + -> _index `i -> 1 `i `uc ]
+"71
+[; ;RFID.c: 71:             }
+}
+[e :U 6 ]
+"73
+[; ;RFID.c: 73:         }
+}
+[e :U 3 ]
+"21
+[; ;RFID.c: 21:         while (a != 0x0A) {
+[e $ != -> _a `i -> 10 `i 4  ]
+[e :U 5 ]
+"75
+[; ;RFID.c: 75:     }
+}
+[e :U 2 ]
+"76
+[; ;RFID.c: 76: }
+[e :UE 1 ]
+}
+[a 2C 78 111 32 77 97 116 99 104 0 ]
+[a 1C 77 97 116 99 104 0 ]

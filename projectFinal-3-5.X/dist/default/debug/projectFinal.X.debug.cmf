@@ -1,0 +1,945 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$C:\Users\yn2217\AppData\Local\Temp\sj5o.o
+idloc IDLOC 0 200000 200000 8 1
+init CODE 0 90 90 4 1
+reset_vec CODE 0 0 0 4 1
+config CONFIG 0 300000 300000 E 1
+$dist/default/debug\projectFinal.X.debug.o
+intcodelo CODE 0 18 18 78 1
+cinit CODE 0 DE8 DE8 4A 1
+intcode_body CODE 0 B68 B68 78 1
+text0 CODE 0 30C 30C 49E 1
+text1 CODE 0 CFA CFA 50 1
+text2 CODE 0 BE0 BE0 60 1
+text3 CODE 0 C40 C40 60 1
+text4 CODE 0 7AA 7AA 1D0 1
+text5 CODE 0 F64 F64 2A 1
+text6 CODE 0 CA0 CA0 5A 1
+text7 CODE 0 AA2 AA2 C6 1
+text8 CODE 0 EF4 EF4 38 1
+text9 CODE 0 E7C E7C 3C 1
+text10 CODE 0 FE2 FE2 E 1
+text11 CODE 0 F8E F8E 1E 1
+text12 CODE 0 FCA FCA 18 1
+text13 CODE 0 E32 E32 4A 1
+text15 CODE 0 97A 97A 128 1
+text16 CODE 0 FAC FAC 1E 1
+text17 CODE 0 D9A D9A 4E 1
+text18 CODE 0 D4A D4A 50 1
+text19 CODE 0 F2C F2C 38 1
+text20 CODE 0 EB8 EB8 3C 1
+text21 CODE 0 FF0 FF0 E 1
+idataCOMRAM CODE 0 FFE FFE 1 1
+cstackCOMRAM COMRAM 1 1 1 2D 1
+cstackBANK1 BANK1 1 100 100 CE 1
+temp COMRAM 1 33 33 1 1
+bssBANK1 BANK1 1 1CE 1CE 15 1
+intcode CODE 0 8 8 6 1
+smallconst SMALLCONST 0 300 300 C 1
+idataBANK1 CODE 0 FFF FFF 1 1
+dataBANK1 BANK1 1 1E3 1E3 1 1
+dataCOMRAM COMRAM 1 32 32 1 1
+bssCOMRAM COMRAM 1 2E 2E 4 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 60-FF 1
+RAM 1E4-2F3 1
+SFR F60-F9B 1
+SFR F9D-FD3 1
+SFR FD5-FDA 1
+SFR FE0-FE2 1
+SFR FE8-FEA 1
+SFR FF0-FFC 1
+BANK0 60-FF 1
+BANK1 1E4-1FF 1
+BANK2 200-2F3 1
+CONST 4-7 1
+CONST E-17 1
+CONST 94-2FF 1
+CONST 1000-1DBF 1
+STACK 1E4-2F3 1
+SMALLCONST 1000-1DBF 1
+CODE 4-7 1
+CODE E-17 1
+CODE 94-2FF 1
+CODE 1000-1DBF 1
+BIGRAM 34-FF 1
+BIGRAM 1E4-2F3 1
+COMRAM 34-5F 1
+EEDATA F00000-F000FF 1
+MEDIUMCONST 1000-1DBF 1
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/debug\projectFinal.X.debug.o
+18 intcodelo CODE >57:H:\downloads\projectFinal.X\projectFinal.X\IR.c
+18 intcodelo CODE >275:H:\downloads\projectFinal.X\projectFinal.X\main.c
+36 intcodelo CODE >277:H:\downloads\projectFinal.X\projectFinal.X\main.c
+44 intcodelo CODE >279:H:\downloads\projectFinal.X\projectFinal.X\main.c
+56 intcodelo CODE >280:H:\downloads\projectFinal.X\projectFinal.X\main.c
+5A intcodelo CODE >281:H:\downloads\projectFinal.X\projectFinal.X\main.c
+60 intcodelo CODE >282:H:\downloads\projectFinal.X\projectFinal.X\main.c
+64 intcodelo CODE >283:H:\downloads\projectFinal.X\projectFinal.X\main.c
+6A intcodelo CODE >284:H:\downloads\projectFinal.X\projectFinal.X\main.c
+6A intcodelo CODE >286:H:\downloads\projectFinal.X\projectFinal.X\main.c
+70 intcodelo CODE >288:H:\downloads\projectFinal.X\projectFinal.X\main.c
+70 intcodelo CODE >289:H:\downloads\projectFinal.X\projectFinal.X\main.c
+8 intcode CODE >28:H:\downloads\projectFinal.X\projectFinal.X\LCD.c
+8 intcode CODE >249:H:\downloads\projectFinal.X\projectFinal.X\main.c
+B68 intcode_body CODE >249:H:\downloads\projectFinal.X\projectFinal.X\main.c
+B68 intcode_body CODE >252:H:\downloads\projectFinal.X\projectFinal.X\main.c
+B76 intcode_body CODE >254:H:\downloads\projectFinal.X\projectFinal.X\main.c
+B78 intcode_body CODE >256:H:\downloads\projectFinal.X\projectFinal.X\main.c
+B8A intcode_body CODE >257:H:\downloads\projectFinal.X\projectFinal.X\main.c
+B90 intcode_body CODE >258:H:\downloads\projectFinal.X\projectFinal.X\main.c
+B94 intcode_body CODE >260:H:\downloads\projectFinal.X\projectFinal.X\main.c
+B98 intcode_body CODE >261:H:\downloads\projectFinal.X\projectFinal.X\main.c
+BAE intcode_body CODE >262:H:\downloads\projectFinal.X\projectFinal.X\main.c
+BB2 intcode_body CODE >263:H:\downloads\projectFinal.X\projectFinal.X\main.c
+BD2 intcode_body CODE >264:H:\downloads\projectFinal.X\projectFinal.X\main.c
+BD8 intcode_body CODE >265:H:\downloads\projectFinal.X\projectFinal.X\main.c
+BDC intcode_body CODE >268:H:\downloads\projectFinal.X\projectFinal.X\main.c
+BDC intcode_body CODE >269:H:\downloads\projectFinal.X\projectFinal.X\main.c
+FF0 text21 CODE >24:H:\downloads\projectFinal.X\projectFinal.X\LCD.c
+FF0 text21 CODE >25:H:\downloads\projectFinal.X\projectFinal.X\LCD.c
+FF2 text21 CODE >26:H:\downloads\projectFinal.X\projectFinal.X\LCD.c
+FFA text21 CODE >27:H:\downloads\projectFinal.X\projectFinal.X\LCD.c
+FFC text21 CODE >28:H:\downloads\projectFinal.X\projectFinal.X\LCD.c
+EB8 text20 CODE >34:H:\downloads\projectFinal.X\projectFinal.X\LCD.c
+EBA text20 CODE >39:H:\downloads\projectFinal.X\projectFinal.X\LCD.c
+ED2 text20 CODE >41:H:\downloads\projectFinal.X\projectFinal.X\LCD.c
+EE6 text20 CODE >42:H:\downloads\projectFinal.X\projectFinal.X\LCD.c
+EEA text20 CODE >43:H:\downloads\projectFinal.X\projectFinal.X\LCD.c
+EF2 text20 CODE >44:H:\downloads\projectFinal.X\projectFinal.X\LCD.c
+F2C text19 CODE >49:H:\downloads\projectFinal.X\projectFinal.X\LCD.c
+F2E text19 CODE >52:H:\downloads\projectFinal.X\projectFinal.X\LCD.c
+F38 text19 CODE >54:H:\downloads\projectFinal.X\projectFinal.X\LCD.c
+F3E text19 CODE >55:H:\downloads\projectFinal.X\projectFinal.X\LCD.c
+F44 text19 CODE >58:H:\downloads\projectFinal.X\projectFinal.X\LCD.c
+F4C text19 CODE >59:H:\downloads\projectFinal.X\projectFinal.X\LCD.c
+F54 text19 CODE >62:H:\downloads\projectFinal.X\projectFinal.X\LCD.c
+F5A text19 CODE >63:H:\downloads\projectFinal.X\projectFinal.X\LCD.c
+F62 text19 CODE >65:H:\downloads\projectFinal.X\projectFinal.X\LCD.c
+D4A text18 CODE >140:H:\downloads\projectFinal.X\projectFinal.X\LCD.c
+D4A text18 CODE >141:H:\downloads\projectFinal.X\projectFinal.X\LCD.c
+D4E text18 CODE >142:H:\downloads\projectFinal.X\projectFinal.X\LCD.c
+D66 text18 CODE >143:H:\downloads\projectFinal.X\projectFinal.X\LCD.c
+D78 text18 CODE >141:H:\downloads\projectFinal.X\projectFinal.X\LCD.c
+D78 text18 CODE >145:H:\downloads\projectFinal.X\projectFinal.X\LCD.c
+D98 text18 CODE >146:H:\downloads\projectFinal.X\projectFinal.X\LCD.c
+D9A text17 CODE >127:H:\downloads\projectFinal.X\projectFinal.X\LCD.c
+D9C text17 CODE >128:H:\downloads\projectFinal.X\projectFinal.X\LCD.c
+DAC text17 CODE >129:H:\downloads\projectFinal.X\projectFinal.X\LCD.c
+DB6 text17 CODE >130:H:\downloads\projectFinal.X\projectFinal.X\LCD.c
+DCC text17 CODE >131:H:\downloads\projectFinal.X\projectFinal.X\LCD.c
+DDA text17 CODE >132:H:\downloads\projectFinal.X\projectFinal.X\LCD.c
+DDE text17 CODE >134:H:\downloads\projectFinal.X\projectFinal.X\LCD.c
+DE6 text17 CODE >135:H:\downloads\projectFinal.X\projectFinal.X\LCD.c
+FAC text16 CODE >36:H:\downloads\projectFinal.X\projectFinal.X\eusart.c
+FAC text16 CODE >37:H:\downloads\projectFinal.X\projectFinal.X\eusart.c
+FC2 text16 CODE >38:H:\downloads\projectFinal.X\projectFinal.X\eusart.c
+FC8 text16 CODE >39:H:\downloads\projectFinal.X\projectFinal.X\eusart.c
+97A text15 CODE >15:H:\downloads\projectFinal.X\projectFinal.X\RFID.c
+97A text15 CODE >18:H:\downloads\projectFinal.X\projectFinal.X\RFID.c
+980 text15 CODE >19:H:\downloads\projectFinal.X\projectFinal.X\RFID.c
+996 text15 CODE >20:H:\downloads\projectFinal.X\projectFinal.X\RFID.c
+99A text15 CODE >21:H:\downloads\projectFinal.X\projectFinal.X\RFID.c
+9A0 text15 CODE >22:H:\downloads\projectFinal.X\projectFinal.X\RFID.c
+9B0 text15 CODE >23:H:\downloads\projectFinal.X\projectFinal.X\RFID.c
+9BA text15 CODE >24:H:\downloads\projectFinal.X\projectFinal.X\RFID.c
+9CA text15 CODE >25:H:\downloads\projectFinal.X\projectFinal.X\RFID.c
+9D0 text15 CODE >26:H:\downloads\projectFinal.X\projectFinal.X\RFID.c
+9D4 text15 CODE >27:H:\downloads\projectFinal.X\projectFinal.X\RFID.c
+9DA text15 CODE >30:H:\downloads\projectFinal.X\projectFinal.X\RFID.c
+9DA text15 CODE >31:H:\downloads\projectFinal.X\projectFinal.X\RFID.c
+9E0 text15 CODE >32:H:\downloads\projectFinal.X\projectFinal.X\RFID.c
+9EE text15 CODE >37:H:\downloads\projectFinal.X\projectFinal.X\RFID.c
+9F4 text15 CODE >38:H:\downloads\projectFinal.X\projectFinal.X\RFID.c
+9F8 text15 CODE >39:H:\downloads\projectFinal.X\projectFinal.X\RFID.c
+A08 text15 CODE >40:H:\downloads\projectFinal.X\projectFinal.X\RFID.c
+A0E text15 CODE >42:H:\downloads\projectFinal.X\projectFinal.X\RFID.c
+A12 text15 CODE >43:H:\downloads\projectFinal.X\projectFinal.X\RFID.c
+A24 text15 CODE >44:H:\downloads\projectFinal.X\projectFinal.X\RFID.c
+A2A text15 CODE >45:H:\downloads\projectFinal.X\projectFinal.X\RFID.c
+A36 text15 CODE >46:H:\downloads\projectFinal.X\projectFinal.X\RFID.c
+A3A text15 CODE >47:H:\downloads\projectFinal.X\projectFinal.X\RFID.c
+A40 text15 CODE >48:H:\downloads\projectFinal.X\projectFinal.X\RFID.c
+A50 text15 CODE >49:H:\downloads\projectFinal.X\projectFinal.X\RFID.c
+A54 text15 CODE >51:H:\downloads\projectFinal.X\projectFinal.X\RFID.c
+A54 text15 CODE >52:H:\downloads\projectFinal.X\projectFinal.X\RFID.c
+A5C text15 CODE >53:H:\downloads\projectFinal.X\projectFinal.X\RFID.c
+A5C text15 CODE >54:H:\downloads\projectFinal.X\projectFinal.X\RFID.c
+A60 text15 CODE >55:H:\downloads\projectFinal.X\projectFinal.X\RFID.c
+A64 text15 CODE >56:H:\downloads\projectFinal.X\projectFinal.X\RFID.c
+A76 text15 CODE >57:H:\downloads\projectFinal.X\projectFinal.X\RFID.c
+A7E text15 CODE >59:H:\downloads\projectFinal.X\projectFinal.X\RFID.c
+A82 text15 CODE >60:H:\downloads\projectFinal.X\projectFinal.X\RFID.c
+A86 text15 CODE >20:H:\downloads\projectFinal.X\projectFinal.X\RFID.c
+A86 text15 CODE >61:H:\downloads\projectFinal.X\projectFinal.X\RFID.c
+AA0 text15 CODE >62:H:\downloads\projectFinal.X\projectFinal.X\RFID.c
+AA0 text15 CODE >63:H:\downloads\projectFinal.X\projectFinal.X\RFID.c
+E32 text13 CODE >50:H:\downloads\projectFinal.X\projectFinal.X\IR.c
+E32 text13 CODE >55:H:\downloads\projectFinal.X\projectFinal.X\IR.c
+E56 text13 CODE >56:H:\downloads\projectFinal.X\projectFinal.X\IR.c
+E7A text13 CODE >57:H:\downloads\projectFinal.X\projectFinal.X\IR.c
+FCA text12 CODE >16:H:\downloads\projectFinal.X\projectFinal.X\eusart.c
+FCA text12 CODE >19:H:\downloads\projectFinal.X\projectFinal.X\eusart.c
+FCC text12 CODE >20:H:\downloads\projectFinal.X\projectFinal.X\eusart.c
+FCE text12 CODE >22:H:\downloads\projectFinal.X\projectFinal.X\eusart.c
+FD2 text12 CODE >23:H:\downloads\projectFinal.X\projectFinal.X\eusart.c
+FD6 text12 CODE >24:H:\downloads\projectFinal.X\projectFinal.X\eusart.c
+FD8 text12 CODE >25:H:\downloads\projectFinal.X\projectFinal.X\eusart.c
+FDA text12 CODE >26:H:\downloads\projectFinal.X\projectFinal.X\eusart.c
+FDC text12 CODE >27:H:\downloads\projectFinal.X\projectFinal.X\eusart.c
+FDE text12 CODE >28:H:\downloads\projectFinal.X\projectFinal.X\eusart.c
+FE0 text12 CODE >29:H:\downloads\projectFinal.X\projectFinal.X\eusart.c
+F8E text11 CODE >21:H:\downloads\projectFinal.X\projectFinal.X\IR.c
+F8E text11 CODE >23:H:\downloads\projectFinal.X\projectFinal.X\IR.c
+F92 text11 CODE >24:H:\downloads\projectFinal.X\projectFinal.X\IR.c
+F96 text11 CODE >29:H:\downloads\projectFinal.X\projectFinal.X\IR.c
+F98 text11 CODE >30:H:\downloads\projectFinal.X\projectFinal.X\IR.c
+F9A text11 CODE >32:H:\downloads\projectFinal.X\projectFinal.X\IR.c
+F9C text11 CODE >33:H:\downloads\projectFinal.X\projectFinal.X\IR.c
+F9E text11 CODE >37:H:\downloads\projectFinal.X\projectFinal.X\IR.c
+FA2 text11 CODE >38:H:\downloads\projectFinal.X\projectFinal.X\IR.c
+FA6 text11 CODE >42:H:\downloads\projectFinal.X\projectFinal.X\IR.c
+FAA text11 CODE >44:H:\downloads\projectFinal.X\projectFinal.X\IR.c
+FE2 text10 CODE >24:H:\downloads\projectFinal.X\projectFinal.X\LCD.c
+FE2 text10 CODE >25:H:\downloads\projectFinal.X\projectFinal.X\LCD.c
+FE4 text10 CODE >26:H:\downloads\projectFinal.X\projectFinal.X\LCD.c
+FEC text10 CODE >27:H:\downloads\projectFinal.X\projectFinal.X\LCD.c
+FEE text10 CODE >28:H:\downloads\projectFinal.X\projectFinal.X\LCD.c
+E7C text9 CODE >34:H:\downloads\projectFinal.X\projectFinal.X\LCD.c
+E7E text9 CODE >39:H:\downloads\projectFinal.X\projectFinal.X\LCD.c
+E96 text9 CODE >41:H:\downloads\projectFinal.X\projectFinal.X\LCD.c
+EAA text9 CODE >42:H:\downloads\projectFinal.X\projectFinal.X\LCD.c
+EAE text9 CODE >43:H:\downloads\projectFinal.X\projectFinal.X\LCD.c
+EB6 text9 CODE >44:H:\downloads\projectFinal.X\projectFinal.X\LCD.c
+EF4 text8 CODE >49:H:\downloads\projectFinal.X\projectFinal.X\LCD.c
+EF6 text8 CODE >52:H:\downloads\projectFinal.X\projectFinal.X\LCD.c
+F00 text8 CODE >54:H:\downloads\projectFinal.X\projectFinal.X\LCD.c
+F06 text8 CODE >55:H:\downloads\projectFinal.X\projectFinal.X\LCD.c
+F0C text8 CODE >58:H:\downloads\projectFinal.X\projectFinal.X\LCD.c
+F14 text8 CODE >59:H:\downloads\projectFinal.X\projectFinal.X\LCD.c
+F1C text8 CODE >62:H:\downloads\projectFinal.X\projectFinal.X\LCD.c
+F22 text8 CODE >63:H:\downloads\projectFinal.X\projectFinal.X\LCD.c
+F2A text8 CODE >65:H:\downloads\projectFinal.X\projectFinal.X\LCD.c
+AA2 text7 CODE >70:H:\downloads\projectFinal.X\projectFinal.X\LCD.c
+AA2 text7 CODE >73:H:\downloads\projectFinal.X\projectFinal.X\LCD.c
+AA4 text7 CODE >74:H:\downloads\projectFinal.X\projectFinal.X\LCD.c
+AA6 text7 CODE >76:H:\downloads\projectFinal.X\projectFinal.X\LCD.c
+AA8 text7 CODE >77:H:\downloads\projectFinal.X\projectFinal.X\LCD.c
+AAA text7 CODE >79:H:\downloads\projectFinal.X\projectFinal.X\LCD.c
+AAC text7 CODE >80:H:\downloads\projectFinal.X\projectFinal.X\LCD.c
+AAE text7 CODE >82:H:\downloads\projectFinal.X\projectFinal.X\LCD.c
+AB0 text7 CODE >83:H:\downloads\projectFinal.X\projectFinal.X\LCD.c
+AB2 text7 CODE >85:H:\downloads\projectFinal.X\projectFinal.X\LCD.c
+AB4 text7 CODE >86:H:\downloads\projectFinal.X\projectFinal.X\LCD.c
+AB6 text7 CODE >88:H:\downloads\projectFinal.X\projectFinal.X\LCD.c
+AB8 text7 CODE >89:H:\downloads\projectFinal.X\projectFinal.X\LCD.c
+ABA text7 CODE >92:H:\downloads\projectFinal.X\projectFinal.X\LCD.c
+AC8 text7 CODE >94:H:\downloads\projectFinal.X\projectFinal.X\LCD.c
+ACE text7 CODE >96:H:\downloads\projectFinal.X\projectFinal.X\LCD.c
+ADC text7 CODE >98:H:\downloads\projectFinal.X\projectFinal.X\LCD.c
+AE2 text7 CODE >100:H:\downloads\projectFinal.X\projectFinal.X\LCD.c
+AEA text7 CODE >102:H:\downloads\projectFinal.X\projectFinal.X\LCD.c
+AF0 text7 CODE >104:H:\downloads\projectFinal.X\projectFinal.X\LCD.c
+AF8 text7 CODE >106:H:\downloads\projectFinal.X\projectFinal.X\LCD.c
+AFE text7 CODE >108:H:\downloads\projectFinal.X\projectFinal.X\LCD.c
+B06 text7 CODE >112:H:\downloads\projectFinal.X\projectFinal.X\LCD.c
+B10 text7 CODE >113:H:\downloads\projectFinal.X\projectFinal.X\LCD.c
+B18 text7 CODE >114:H:\downloads\projectFinal.X\projectFinal.X\LCD.c
+B22 text7 CODE >115:H:\downloads\projectFinal.X\projectFinal.X\LCD.c
+B2A text7 CODE >116:H:\downloads\projectFinal.X\projectFinal.X\LCD.c
+B34 text7 CODE >117:H:\downloads\projectFinal.X\projectFinal.X\LCD.c
+B42 text7 CODE >118:H:\downloads\projectFinal.X\projectFinal.X\LCD.c
+B4C text7 CODE >119:H:\downloads\projectFinal.X\projectFinal.X\LCD.c
+B54 text7 CODE >120:H:\downloads\projectFinal.X\projectFinal.X\LCD.c
+B5E text7 CODE >121:H:\downloads\projectFinal.X\projectFinal.X\LCD.c
+B66 text7 CODE >122:H:\downloads\projectFinal.X\projectFinal.X\LCD.c
+CA0 text6 CODE >30:H:\downloads\projectFinal.X\projectFinal.X\PWM.c
+CA0 text6 CODE >35:H:\downloads\projectFinal.X\projectFinal.X\PWM.c
+CA2 text6 CODE >36:H:\downloads\projectFinal.X\projectFinal.X\PWM.c
+CA4 text6 CODE >37:H:\downloads\projectFinal.X\projectFinal.X\PWM.c
+CA6 text6 CODE >38:H:\downloads\projectFinal.X\projectFinal.X\PWM.c
+CA8 text6 CODE >39:H:\downloads\projectFinal.X\projectFinal.X\PWM.c
+CAA text6 CODE >40:H:\downloads\projectFinal.X\projectFinal.X\PWM.c
+CAC text6 CODE >41:H:\downloads\projectFinal.X\projectFinal.X\PWM.c
+CAE text6 CODE >42:H:\downloads\projectFinal.X\projectFinal.X\PWM.c
+CB0 text6 CODE >45:H:\downloads\projectFinal.X\projectFinal.X\PWM.c
+CB4 text6 CODE >47:H:\downloads\projectFinal.X\projectFinal.X\PWM.c
+CB8 text6 CODE >50:H:\downloads\projectFinal.X\projectFinal.X\PWM.c
+CBC text6 CODE >51:H:\downloads\projectFinal.X\projectFinal.X\PWM.c
+CC0 text6 CODE >53:H:\downloads\projectFinal.X\projectFinal.X\PWM.c
+CC4 text6 CODE >54:H:\downloads\projectFinal.X\projectFinal.X\PWM.c
+CC8 text6 CODE >57:H:\downloads\projectFinal.X\projectFinal.X\PWM.c
+CCC text6 CODE >58:H:\downloads\projectFinal.X\projectFinal.X\PWM.c
+CD0 text6 CODE >59:H:\downloads\projectFinal.X\projectFinal.X\PWM.c
+CD4 text6 CODE >60:H:\downloads\projectFinal.X\projectFinal.X\PWM.c
+CD8 text6 CODE >61:H:\downloads\projectFinal.X\projectFinal.X\PWM.c
+CDC text6 CODE >62:H:\downloads\projectFinal.X\projectFinal.X\PWM.c
+CE0 text6 CODE >63:H:\downloads\projectFinal.X\projectFinal.X\PWM.c
+CE4 text6 CODE >64:H:\downloads\projectFinal.X\projectFinal.X\PWM.c
+CE8 text6 CODE >70:H:\downloads\projectFinal.X\projectFinal.X\PWM.c
+CEC text6 CODE >71:H:\downloads\projectFinal.X\projectFinal.X\PWM.c
+CF0 text6 CODE >72:H:\downloads\projectFinal.X\projectFinal.X\PWM.c
+CF4 text6 CODE >73:H:\downloads\projectFinal.X\projectFinal.X\PWM.c
+CF8 text6 CODE >75:H:\downloads\projectFinal.X\projectFinal.X\PWM.c
+F64 text5 CODE >15:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\Umul16.c
+F64 text5 CODE >37:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\Umul16.c
+F70 text5 CODE >38:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\Umul16.c
+F78 text5 CODE >39:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\Umul16.c
+F80 text5 CODE >52:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\Umul16.c
+F8C text5 CODE >53:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\Umul16.c
+7AA text4 CODE >81:H:\downloads\projectFinal.X\projectFinal.X\PWM.c
+7AA text4 CODE >83:H:\downloads\projectFinal.X\projectFinal.X\PWM.c
+7DC text4 CODE >85:H:\downloads\projectFinal.X\projectFinal.X\PWM.c
+7F8 text4 CODE >87:H:\downloads\projectFinal.X\projectFinal.X\PWM.c
+830 text4 CODE >88:H:\downloads\projectFinal.X\projectFinal.X\PWM.c
+860 text4 CODE >89:H:\downloads\projectFinal.X\projectFinal.X\PWM.c
+864 text4 CODE >90:H:\downloads\projectFinal.X\projectFinal.X\PWM.c
+864 text4 CODE >92:H:\downloads\projectFinal.X\projectFinal.X\PWM.c
+8A0 text4 CODE >93:H:\downloads\projectFinal.X\projectFinal.X\PWM.c
+8A0 text4 CODE >95:H:\downloads\projectFinal.X\projectFinal.X\PWM.c
+8BC text4 CODE >96:H:\downloads\projectFinal.X\projectFinal.X\PWM.c
+8DC text4 CODE >97:H:\downloads\projectFinal.X\projectFinal.X\PWM.c
+8FE text4 CODE >99:H:\downloads\projectFinal.X\projectFinal.X\PWM.c
+91A text4 CODE >100:H:\downloads\projectFinal.X\projectFinal.X\PWM.c
+944 text4 CODE >101:H:\downloads\projectFinal.X\projectFinal.X\PWM.c
+948 text4 CODE >102:H:\downloads\projectFinal.X\projectFinal.X\PWM.c
+978 text4 CODE >103:H:\downloads\projectFinal.X\projectFinal.X\PWM.c
+978 text4 CODE >105:H:\downloads\projectFinal.X\projectFinal.X\PWM.c
+C40 text3 CODE >110:H:\downloads\projectFinal.X\projectFinal.X\PWM.c
+C40 text3 CODE >112:H:\downloads\projectFinal.X\projectFinal.X\PWM.c
+C44 text3 CODE >113:H:\downloads\projectFinal.X\projectFinal.X\PWM.c
+C50 text3 CODE >114:H:\downloads\projectFinal.X\projectFinal.X\PWM.c
+C5C text3 CODE >115:H:\downloads\projectFinal.X\projectFinal.X\PWM.c
+C66 text3 CODE >116:H:\downloads\projectFinal.X\projectFinal.X\PWM.c
+C74 text3 CODE >117:H:\downloads\projectFinal.X\projectFinal.X\PWM.c
+C9E text3 CODE >118:H:\downloads\projectFinal.X\projectFinal.X\PWM.c
+BE0 text2 CODE >124:H:\downloads\projectFinal.X\projectFinal.X\PWM.c
+BE0 text2 CODE >126:H:\downloads\projectFinal.X\projectFinal.X\PWM.c
+BE4 text2 CODE >127:H:\downloads\projectFinal.X\projectFinal.X\PWM.c
+BF0 text2 CODE >128:H:\downloads\projectFinal.X\projectFinal.X\PWM.c
+BFC text2 CODE >129:H:\downloads\projectFinal.X\projectFinal.X\PWM.c
+C06 text2 CODE >130:H:\downloads\projectFinal.X\projectFinal.X\PWM.c
+C14 text2 CODE >131:H:\downloads\projectFinal.X\projectFinal.X\PWM.c
+C3E text2 CODE >132:H:\downloads\projectFinal.X\projectFinal.X\PWM.c
+CFA text1 CODE >138:H:\downloads\projectFinal.X\projectFinal.X\PWM.c
+CFA text1 CODE >139:H:\downloads\projectFinal.X\projectFinal.X\PWM.c
+D0E text1 CODE >140:H:\downloads\projectFinal.X\projectFinal.X\PWM.c
+D20 text1 CODE >141:H:\downloads\projectFinal.X\projectFinal.X\PWM.c
+D34 text1 CODE >142:H:\downloads\projectFinal.X\projectFinal.X\PWM.c
+D48 text1 CODE >143:H:\downloads\projectFinal.X\projectFinal.X\PWM.c
+30C text0 CODE >51:H:\downloads\projectFinal.X\projectFinal.X\main.c
+30C text0 CODE >54:H:\downloads\projectFinal.X\projectFinal.X\main.c
+310 text0 CODE >55:H:\downloads\projectFinal.X\projectFinal.X\main.c
+322 text0 CODE >59:H:\downloads\projectFinal.X\projectFinal.X\main.c
+324 text0 CODE >60:H:\downloads\projectFinal.X\projectFinal.X\main.c
+326 text0 CODE >62:H:\downloads\projectFinal.X\projectFinal.X\main.c
+328 text0 CODE >63:H:\downloads\projectFinal.X\projectFinal.X\main.c
+32A text0 CODE >65:H:\downloads\projectFinal.X\projectFinal.X\main.c
+32C text0 CODE >66:H:\downloads\projectFinal.X\projectFinal.X\main.c
+32E text0 CODE >70:H:\downloads\projectFinal.X\projectFinal.X\main.c
+330 text0 CODE >71:H:\downloads\projectFinal.X\projectFinal.X\main.c
+332 text0 CODE >73:H:\downloads\projectFinal.X\projectFinal.X\main.c
+334 text0 CODE >74:H:\downloads\projectFinal.X\projectFinal.X\main.c
+336 text0 CODE >78:H:\downloads\projectFinal.X\projectFinal.X\main.c
+33A text0 CODE >80:H:\downloads\projectFinal.X\projectFinal.X\main.c
+33C text0 CODE >81:H:\downloads\projectFinal.X\projectFinal.X\main.c
+33E text0 CODE >82:H:\downloads\projectFinal.X\projectFinal.X\main.c
+340 text0 CODE >84:H:\downloads\projectFinal.X\projectFinal.X\main.c
+342 text0 CODE >86:H:\downloads\projectFinal.X\projectFinal.X\main.c
+344 text0 CODE >87:H:\downloads\projectFinal.X\projectFinal.X\main.c
+346 text0 CODE >88:H:\downloads\projectFinal.X\projectFinal.X\main.c
+348 text0 CODE >93:H:\downloads\projectFinal.X\projectFinal.X\main.c
+34C text0 CODE >94:H:\downloads\projectFinal.X\projectFinal.X\main.c
+350 text0 CODE >96:H:\downloads\projectFinal.X\projectFinal.X\main.c
+354 text0 CODE >97:H:\downloads\projectFinal.X\projectFinal.X\main.c
+358 text0 CODE >106:H:\downloads\projectFinal.X\projectFinal.X\main.c
+35E text0 CODE >107:H:\downloads\projectFinal.X\projectFinal.X\main.c
+362 text0 CODE >108:H:\downloads\projectFinal.X\projectFinal.X\main.c
+36A text0 CODE >109:H:\downloads\projectFinal.X\projectFinal.X\main.c
+372 text0 CODE >110:H:\downloads\projectFinal.X\projectFinal.X\main.c
+376 text0 CODE >111:H:\downloads\projectFinal.X\projectFinal.X\main.c
+37E text0 CODE >114:H:\downloads\projectFinal.X\projectFinal.X\main.c
+382 text0 CODE >115:H:\downloads\projectFinal.X\projectFinal.X\main.c
+386 text0 CODE >116:H:\downloads\projectFinal.X\projectFinal.X\main.c
+38E text0 CODE >117:H:\downloads\projectFinal.X\projectFinal.X\main.c
+396 text0 CODE >118:H:\downloads\projectFinal.X\projectFinal.X\main.c
+39A text0 CODE >119:H:\downloads\projectFinal.X\projectFinal.X\main.c
+3A2 text0 CODE >123:H:\downloads\projectFinal.X\projectFinal.X\main.c
+3AE text0 CODE >124:H:\downloads\projectFinal.X\projectFinal.X\main.c
+3BA text0 CODE >130:H:\downloads\projectFinal.X\projectFinal.X\main.c
+3C0 text0 CODE >134:H:\downloads\projectFinal.X\projectFinal.X\main.c
+3C4 text0 CODE >137:H:\downloads\projectFinal.X\projectFinal.X\main.c
+3C4 text0 CODE >138:H:\downloads\projectFinal.X\projectFinal.X\main.c
+3DA text0 CODE >142:H:\downloads\projectFinal.X\projectFinal.X\main.c
+3DE text0 CODE >144:H:\downloads\projectFinal.X\projectFinal.X\main.c
+3F6 text0 CODE >146:H:\downloads\projectFinal.X\projectFinal.X\main.c
+40C text0 CODE >147:H:\downloads\projectFinal.X\projectFinal.X\main.c
+40E text0 CODE >148:H:\downloads\projectFinal.X\projectFinal.X\main.c
+426 text0 CODE >142:H:\downloads\projectFinal.X\projectFinal.X\main.c
+426 text0 CODE >150:H:\downloads\projectFinal.X\projectFinal.X\main.c
+48C text0 CODE >151:H:\downloads\projectFinal.X\projectFinal.X\main.c
+490 text0 CODE >154:H:\downloads\projectFinal.X\projectFinal.X\main.c
+4A4 text0 CODE >157:H:\downloads\projectFinal.X\projectFinal.X\main.c
+4A8 text0 CODE >158:H:\downloads\projectFinal.X\projectFinal.X\main.c
+4AA text0 CODE >159:H:\downloads\projectFinal.X\projectFinal.X\main.c
+4D8 text0 CODE >157:H:\downloads\projectFinal.X\projectFinal.X\main.c
+4D8 text0 CODE >160:H:\downloads\projectFinal.X\projectFinal.X\main.c
+4EE text0 CODE >161:H:\downloads\projectFinal.X\projectFinal.X\main.c
+502 text0 CODE >164:H:\downloads\projectFinal.X\projectFinal.X\main.c
+506 text0 CODE >166:H:\downloads\projectFinal.X\projectFinal.X\main.c
+51E text0 CODE >168:H:\downloads\projectFinal.X\projectFinal.X\main.c
+534 text0 CODE >169:H:\downloads\projectFinal.X\projectFinal.X\main.c
+536 text0 CODE >170:H:\downloads\projectFinal.X\projectFinal.X\main.c
+54A text0 CODE >173:H:\downloads\projectFinal.X\projectFinal.X\main.c
+576 text0 CODE >175:H:\downloads\projectFinal.X\projectFinal.X\main.c
+578 text0 CODE >177:H:\downloads\projectFinal.X\projectFinal.X\main.c
+57C text0 CODE >179:H:\downloads\projectFinal.X\projectFinal.X\main.c
+590 text0 CODE >181:H:\downloads\projectFinal.X\projectFinal.X\main.c
+5A4 text0 CODE >183:H:\downloads\projectFinal.X\projectFinal.X\main.c
+5BC text0 CODE >184:H:\downloads\projectFinal.X\projectFinal.X\main.c
+5D2 text0 CODE >185:H:\downloads\projectFinal.X\projectFinal.X\main.c
+5D8 text0 CODE >186:H:\downloads\projectFinal.X\projectFinal.X\main.c
+5D8 text0 CODE >189:H:\downloads\projectFinal.X\projectFinal.X\main.c
+5DE text0 CODE >177:H:\downloads\projectFinal.X\projectFinal.X\main.c
+5DE text0 CODE >190:H:\downloads\projectFinal.X\projectFinal.X\main.c
+620 text0 CODE >192:H:\downloads\projectFinal.X\projectFinal.X\main.c
+624 text0 CODE >194:H:\downloads\projectFinal.X\projectFinal.X\main.c
+652 text0 CODE >196:H:\downloads\projectFinal.X\projectFinal.X\main.c
+654 text0 CODE >197:H:\downloads\projectFinal.X\projectFinal.X\main.c
+658 text0 CODE >198:H:\downloads\projectFinal.X\projectFinal.X\main.c
+66C text0 CODE >199:H:\downloads\projectFinal.X\projectFinal.X\main.c
+680 text0 CODE >200:H:\downloads\projectFinal.X\projectFinal.X\main.c
+698 text0 CODE >201:H:\downloads\projectFinal.X\projectFinal.X\main.c
+6AE text0 CODE >202:H:\downloads\projectFinal.X\projectFinal.X\main.c
+6B4 text0 CODE >203:H:\downloads\projectFinal.X\projectFinal.X\main.c
+6B4 text0 CODE >204:H:\downloads\projectFinal.X\projectFinal.X\main.c
+6BA text0 CODE >197:H:\downloads\projectFinal.X\projectFinal.X\main.c
+6BA text0 CODE >205:H:\downloads\projectFinal.X\projectFinal.X\main.c
+6FC text0 CODE >206:H:\downloads\projectFinal.X\projectFinal.X\main.c
+704 text0 CODE >207:H:\downloads\projectFinal.X\projectFinal.X\main.c
+70C text0 CODE >210:H:\downloads\projectFinal.X\projectFinal.X\main.c
+70C text0 CODE >215:H:\downloads\projectFinal.X\projectFinal.X\main.c
+710 text0 CODE >220:H:\downloads\projectFinal.X\projectFinal.X\main.c
+720 text0 CODE >221:H:\downloads\projectFinal.X\projectFinal.X\main.c
+734 text0 CODE >222:H:\downloads\projectFinal.X\projectFinal.X\main.c
+73A text0 CODE >223:H:\downloads\projectFinal.X\projectFinal.X\main.c
+73C text0 CODE >225:H:\downloads\projectFinal.X\projectFinal.X\main.c
+740 text0 CODE >226:H:\downloads\projectFinal.X\projectFinal.X\main.c
+742 text0 CODE >227:H:\downloads\projectFinal.X\projectFinal.X\main.c
+75A text0 CODE >225:H:\downloads\projectFinal.X\projectFinal.X\main.c
+75A text0 CODE >228:H:\downloads\projectFinal.X\projectFinal.X\main.c
+76E text0 CODE >229:H:\downloads\projectFinal.X\projectFinal.X\main.c
+772 text0 CODE >230:H:\downloads\projectFinal.X\projectFinal.X\main.c
+776 text0 CODE >231:H:\downloads\projectFinal.X\projectFinal.X\main.c
+77A text0 CODE >232:H:\downloads\projectFinal.X\projectFinal.X\main.c
+77E text0 CODE >236:H:\downloads\projectFinal.X\projectFinal.X\main.c
+78A text0 CODE >237:H:\downloads\projectFinal.X\projectFinal.X\main.c
+79A text0 CODE >238:H:\downloads\projectFinal.X\projectFinal.X\main.c
+79E text0 CODE >240:H:\downloads\projectFinal.X\projectFinal.X\main.c
+7A2 text0 CODE >242:H:\downloads\projectFinal.X\projectFinal.X\main.c
+7A6 text0 CODE >243:H:\downloads\projectFinal.X\projectFinal.X\main.c
+DE8 cinit CODE >2455:C:\Users\yn2217\AppData\Local\Temp\sj5o.
+DE8 cinit CODE >2457:C:\Users\yn2217\AppData\Local\Temp\sj5o.
+DE8 cinit CODE >2460:C:\Users\yn2217\AppData\Local\Temp\sj5o.
+DE8 cinit CODE >2516:C:\Users\yn2217\AppData\Local\Temp\sj5o.
+DEA cinit CODE >2517:C:\Users\yn2217\AppData\Local\Temp\sj5o.
+DEC cinit CODE >2518:C:\Users\yn2217\AppData\Local\Temp\sj5o.
+DEE cinit CODE >2519:C:\Users\yn2217\AppData\Local\Temp\sj5o.
+DF0 cinit CODE >2520:C:\Users\yn2217\AppData\Local\Temp\sj5o.
+DF2 cinit CODE >2521:C:\Users\yn2217\AppData\Local\Temp\sj5o.
+DF4 cinit CODE >2522:C:\Users\yn2217\AppData\Local\Temp\sj5o.
+DF6 cinit CODE >2523:C:\Users\yn2217\AppData\Local\Temp\sj5o.
+DFA cinit CODE >2527:C:\Users\yn2217\AppData\Local\Temp\sj5o.
+DFC cinit CODE >2528:C:\Users\yn2217\AppData\Local\Temp\sj5o.
+DFE cinit CODE >2529:C:\Users\yn2217\AppData\Local\Temp\sj5o.
+E00 cinit CODE >2530:C:\Users\yn2217\AppData\Local\Temp\sj5o.
+E02 cinit CODE >2531:C:\Users\yn2217\AppData\Local\Temp\sj5o.
+E04 cinit CODE >2532:C:\Users\yn2217\AppData\Local\Temp\sj5o.
+E06 cinit CODE >2533:C:\Users\yn2217\AppData\Local\Temp\sj5o.
+E08 cinit CODE >2534:C:\Users\yn2217\AppData\Local\Temp\sj5o.
+E0C cinit CODE >2538:C:\Users\yn2217\AppData\Local\Temp\sj5o.
+E10 cinit CODE >2539:C:\Users\yn2217\AppData\Local\Temp\sj5o.
+E12 cinit CODE >2540:C:\Users\yn2217\AppData\Local\Temp\sj5o.
+E12 cinit CODE >2541:C:\Users\yn2217\AppData\Local\Temp\sj5o.
+E14 cinit CODE >2542:C:\Users\yn2217\AppData\Local\Temp\sj5o.
+E16 cinit CODE >2543:C:\Users\yn2217\AppData\Local\Temp\sj5o.
+E18 cinit CODE >2546:C:\Users\yn2217\AppData\Local\Temp\sj5o.
+E1A cinit CODE >2547:C:\Users\yn2217\AppData\Local\Temp\sj5o.
+E1C cinit CODE >2548:C:\Users\yn2217\AppData\Local\Temp\sj5o.
+E1E cinit CODE >2549:C:\Users\yn2217\AppData\Local\Temp\sj5o.
+E20 cinit CODE >2555:C:\Users\yn2217\AppData\Local\Temp\sj5o.
+E20 cinit CODE >2557:C:\Users\yn2217\AppData\Local\Temp\sj5o.
+E22 cinit CODE >2558:C:\Users\yn2217\AppData\Local\Temp\sj5o.
+E24 cinit CODE >2560:C:\Users\yn2217\AppData\Local\Temp\sj5o.
+E26 cinit CODE >2561:C:\Users\yn2217\AppData\Local\Temp\sj5o.
+E28 cinit CODE >2562:C:\Users\yn2217\AppData\Local\Temp\sj5o.
+E2A cinit CODE >2563:C:\Users\yn2217\AppData\Local\Temp\sj5o.
+E2C cinit CODE >2564:C:\Users\yn2217\AppData\Local\Temp\sj5o.
+E2E cinit CODE >2565:C:\Users\yn2217\AppData\Local\Temp\sj5o.
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+_a 2E 0 COMRAM 1 bssCOMRAM dist/default/debug\projectFinal.X.debug.o
+i1_E_TOG FF0 0 CODE 0 text21 dist/default/debug\projectFinal.X.debug.o
+__LdataBANK1 0 0 ABS 0 dataBANK1 dist/default/debug\projectFinal.X.debug.o
+__Lmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/debug\projectFinal.X.debug.o
+__size_of_initEusart 0 0 ABS 0 - dist/default/debug\projectFinal.X.debug.o
+LCD_String@string 9 0 COMRAM 1 cstackCOMRAM dist/default/debug\projectFinal.X.debug.o
+__Hspace_0 30000E 0 ABS 0 - dist/default/debug\projectFinal.X.debug.o
+__Hspace_1 1E4 0 ABS 0 - dist/default/debug\projectFinal.X.debug.o
+__Hspace_2 0 0 ABS 0 - dist/default/debug\projectFinal.X.debug.o
+__HidataBANK1 0 0 ABS 0 idataBANK1 dist/default/debug\projectFinal.X.debug.o
+_PWMCON0 F6F 0 ABS 0 - dist/default/debug\projectFinal.X.debug.o
+_PWMCON1 F6E 0 ABS 0 - dist/default/debug\projectFinal.X.debug.o
+__Hibigdata 0 0 CODE 0 ibigdata dist/default/debug\projectFinal.X.debug.o
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\yn2217\AppData\Local\Temp\sj5o.o
+i1LCDout@number 4 0 COMRAM 1 cstackCOMRAM dist/default/debug\projectFinal.X.debug.o
+__Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/debug\projectFinal.X.debug.o
+__end_of_LCDout EB8 0 CODE 0 text9 dist/default/debug\projectFinal.X.debug.o
+setMotorPWM@m 19 0 COMRAM 1 cstackCOMRAM dist/default/debug\projectFinal.X.debug.o
+main@c 1C8 0 BANK1 1 cstackBANK1 dist/default/debug\projectFinal.X.debug.o
+main@i 1CD 0 BANK1 1 cstackBANK1 dist/default/debug\projectFinal.X.debug.o
+__Lsmallconst 300 0 SMALLCONST 0 smallconst dist/default/debug\projectFinal.X.debug.o
+_LATB F8A 0 ABS 0 - dist/default/debug\projectFinal.X.debug.o
+_LATC F8B 0 ABS 0 - dist/default/debug\projectFinal.X.debug.o
+_LATD F8C 0 ABS 0 - dist/default/debug\projectFinal.X.debug.o
+_PIR1 F9E 0 ABS 0 - dist/default/debug\projectFinal.X.debug.o
+___sp 0 0 STACK 2 stack C:\Users\yn2217\AppData\Local\Temp\sj5o.o
+_main 30C 0 CODE 0 text0 dist/default/debug\projectFinal.X.debug.o
+_move CFA 0 CODE 0 text1 dist/default/debug\projectFinal.X.debug.o
+_stop BE0 0 CODE 0 text2 dist/default/debug\projectFinal.X.debug.o
+btemp 33 0 COMRAM 1 temp dist/default/debug\projectFinal.X.debug.o
+start 90 0 CODE 0 init C:\Users\yn2217\AppData\Local\Temp\sj5o.o
+_SendLCD EF4 0 CODE 0 text8 dist/default/debug\projectFinal.X.debug.o
+_SetLine D9A 0 CODE 0 text17 dist/default/debug\projectFinal.X.debug.o
+__size_of_main 0 0 ABS 0 - dist/default/debug\projectFinal.X.debug.o
+__size_of_move 0 0 ABS 0 - dist/default/debug\projectFinal.X.debug.o
+__size_of_stop 0 0 ABS 0 - dist/default/debug\projectFinal.X.debug.o
+findStrengths@leftIR 13 0 COMRAM 1 cstackCOMRAM dist/default/debug\projectFinal.X.debug.o
+__CFG_WDTEN$OFF 0 0 ABS 0 - dist/default/debug\projectFinal.X.debug.o
+__HbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/debug\projectFinal.X.debug.o
+?___wmul 13 0 COMRAM 1 cstackCOMRAM dist/default/debug\projectFinal.X.debug.o
+__size_ofi1_LCDout 0 0 ABS 0 - dist/default/debug\projectFinal.X.debug.o
+__LidataBANK1 0 0 ABS 0 idataBANK1 dist/default/debug\projectFinal.X.debug.o
+__Hpowerup 90 0 CODE 0 powerup dist/default/debug\projectFinal.X.debug.o
+__size_of_setMotorsFullSpeed 0 0 ABS 0 - dist/default/debug\projectFinal.X.debug.o
+ttemp5 34 0 COMRAM 1 temp dist/default/debug\projectFinal.X.debug.o
+ttemp6 37 0 COMRAM 1 temp dist/default/debug\projectFinal.X.debug.o
+ttemp7 3B 0 COMRAM 1 temp dist/default/debug\projectFinal.X.debug.o
+__HdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/debug\projectFinal.X.debug.o
+i1SendLCD@LowBits 7 0 COMRAM 1 cstackCOMRAM dist/default/debug\projectFinal.X.debug.o
+__accesstop 60 0 ABS 0 - C:\Users\yn2217\AppData\Local\Temp\sj5o.o
+intlevel0 0 0 CODE 0 text C:\Users\yn2217\AppData\Local\Temp\sj5o.o
+intlevel1 0 0 CODE 0 text C:\Users\yn2217\AppData\Local\Temp\sj5o.o
+intlevel2 0 0 CODE 0 text C:\Users\yn2217\AppData\Local\Temp\sj5o.o
+intlevel3 0 0 CODE 0 text C:\Users\yn2217\AppData\Local\Temp\sj5o.o
+__LbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/debug\projectFinal.X.debug.o
+_OSCCONbits FD3 0 ABS 0 - dist/default/debug\projectFinal.X.debug.o
+__LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/debug\projectFinal.X.debug.o
+wtemp8 34 0 COMRAM 1 temp dist/default/debug\projectFinal.X.debug.o
+findStrengths@rightIR 15 0 COMRAM 1 cstackCOMRAM dist/default/debug\projectFinal.X.debug.o
+__Hifardata 0 0 CODE 0 ifardata dist/default/debug\projectFinal.X.debug.o
+SetLine@line 9 0 COMRAM 1 cstackCOMRAM dist/default/debug\projectFinal.X.debug.o
+__Hclrtext 0 0 ABS 0 clrtext dist/default/debug\projectFinal.X.debug.o
+__pidataCOMRAM FFE 0 CODE 0 idataCOMRAM dist/default/debug\projectFinal.X.debug.o
+___wmul@multiplicand 15 0 COMRAM 1 cstackCOMRAM dist/default/debug\projectFinal.X.debug.o
+i1SendLCD@Byte 8 0 COMRAM 1 cstackCOMRAM dist/default/debug\projectFinal.X.debug.o
+i1SendLCD@type 5 0 COMRAM 1 cstackCOMRAM dist/default/debug\projectFinal.X.debug.o
+_ANSEL0 FB8 0 ABS 0 - dist/default/debug\projectFinal.X.debug.o
+_ANSEL1 FB9 0 ABS 0 - dist/default/debug\projectFinal.X.debug.o
+SendLCD@HighBits 17 0 COMRAM 1 cstackCOMRAM dist/default/debug\projectFinal.X.debug.o
+___inthi_sp 0 0 STACK 2 stack C:\Users\yn2217\AppData\Local\Temp\sj5o.o
+___intlo_sp 0 0 STACK 2 stack C:\Users\yn2217\AppData\Local\Temp\sj5o.o
+_LCD_String D4A 0 CODE 0 text18 dist/default/debug\projectFinal.X.debug.o
+__LdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/debug\projectFinal.X.debug.o
+__size_of_initLCD 0 0 ABS 0 - dist/default/debug\projectFinal.X.debug.o
+__size_of_initPWM 0 0 ABS 0 - dist/default/debug\projectFinal.X.debug.o
+__Hintcode_body 0 0 ABS 0 intcode_body dist/default/debug\projectFinal.X.debug.o
+__end_of___wmul F8E 0 CODE 0 text5 dist/default/debug\projectFinal.X.debug.o
+i1_LCDout EB8 0 CODE 0 text20 dist/default/debug\projectFinal.X.debug.o
+__Lintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/debug\projectFinal.X.debug.o
+_BAUDCONbits FAA 0 ABS 0 - dist/default/debug\projectFinal.X.debug.o
+__Hmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/debug\projectFinal.X.debug.o
+__Hintcodelo 90 0 CODE 0 intcodelo dist/default/debug\projectFinal.X.debug.o
+__end_ofi1_LCDout EF4 0 CODE 0 text20 dist/default/debug\projectFinal.X.debug.o
+_IRsource 1CE 0 BANK1 1 bssBANK1 dist/default/debug\projectFinal.X.debug.o
+__size_of_E_TOG 0 0 ABS 0 - dist/default/debug\projectFinal.X.debug.o
+__LidataCOMRAM 0 0 ABS 0 idataCOMRAM dist/default/debug\projectFinal.X.debug.o
+_LCDout E7C 0 CODE 0 text9 dist/default/debug\projectFinal.X.debug.o
+_CAP2BUFH F67 0 ABS 0 - dist/default/debug\projectFinal.X.debug.o
+_CAP2BUFL F66 0 ABS 0 - dist/default/debug\projectFinal.X.debug.o
+_CAP3BUFH F65 0 ABS 0 - dist/default/debug\projectFinal.X.debug.o
+_CAP3BUFL F64 0 ABS 0 - dist/default/debug\projectFinal.X.debug.o
+_INTCON2bits FF1 0 ABS 0 - dist/default/debug\projectFinal.X.debug.o
+_INTCON3bits FF0 0 ABS 0 - dist/default/debug\projectFinal.X.debug.o
+__Lintcodelo 18 0 CODE 0 intcodelo dist/default/debug\projectFinal.X.debug.o
+__CFG_MCLRE$OFF 0 0 ABS 0 - dist/default/debug\projectFinal.X.debug.o
+__end_of_initIR FAC 0 CODE 0 text11 dist/default/debug\projectFinal.X.debug.o
+start_initialization DE8 0 CODE 0 cinit dist/default/debug\projectFinal.X.debug.o
+_OSCCON FD3 0 ABS 0 - dist/default/debug\projectFinal.X.debug.o
+_setMotorPWM 7AA 0 CODE 0 text4 dist/default/debug\projectFinal.X.debug.o
+__HnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/debug\projectFinal.X.debug.o
+_TRISAbits F92 0 ABS 0 - dist/default/debug\projectFinal.X.debug.o
+_PTCON0 F7F 0 ABS 0 - dist/default/debug\projectFinal.X.debug.o
+_PTCON1 F7E 0 ABS 0 - dist/default/debug\projectFinal.X.debug.o
+_PTPERH F7A 0 ABS 0 - dist/default/debug\projectFinal.X.debug.o
+_PTPERL F7B 0 ABS 0 - dist/default/debug\projectFinal.X.debug.o
+_TRISBbits F93 0 ABS 0 - dist/default/debug\projectFinal.X.debug.o
+_TRISCbits F94 0 ABS 0 - dist/default/debug\projectFinal.X.debug.o
+_TRISDbits F95 0 ABS 0 - dist/default/debug\projectFinal.X.debug.o
+__end_of_LCD_String D9A 0 CODE 0 text18 dist/default/debug\projectFinal.X.debug.o
+___rparam_used 1 0 ABS 0 - dist/default/debug\projectFinal.X.debug.o
+_SPBRGH FB0 0 ABS 0 - dist/default/debug\projectFinal.X.debug.o
+__pcstackBANK1 100 0 BANK1 1 cstackBANK1 dist/default/debug\projectFinal.X.debug.o
+__size_of_LCDout 0 0 ABS 0 - dist/default/debug\projectFinal.X.debug.o
+__end_of_initLCD B68 0 CODE 0 text7 dist/default/debug\projectFinal.X.debug.o
+__end_of_initPWM CFA 0 CODE 0 text6 dist/default/debug\projectFinal.X.debug.o
+__Hbank0 0 0 ABS 0 bank0 dist/default/debug\projectFinal.X.debug.o
+__Hbank1 0 0 ABS 0 bank1 dist/default/debug\projectFinal.X.debug.o
+__Hbank2 0 0 ABS 0 bank2 dist/default/debug\projectFinal.X.debug.o
+__Hcinit 0 0 ABS 0 cinit dist/default/debug\projectFinal.X.debug.o
+__Hconst 0 0 CONST 0 const dist/default/debug\projectFinal.X.debug.o
+__Hidata 0 0 CODE 0 idata dist/default/debug\projectFinal.X.debug.o
+__Hidloc 200008 0 IDLOC 0 idloc dist/default/debug\projectFinal.X.debug.o
+__Hnvbit 0 0 COMRAM 1 nvbit dist/default/debug\projectFinal.X.debug.o
+__Hparam 0 0 COMRAM 1 rparam dist/default/debug\projectFinal.X.debug.o
+__Hrdata 0 0 COMRAM 1 rdata dist/default/debug\projectFinal.X.debug.o
+__Hstack 0 0 STACK 2 stack dist/default/debug\projectFinal.X.debug.o
+__Htext0 0 0 ABS 0 text0 dist/default/debug\projectFinal.X.debug.o
+__Htext1 0 0 ABS 0 text1 dist/default/debug\projectFinal.X.debug.o
+__Htext2 0 0 ABS 0 text2 dist/default/debug\projectFinal.X.debug.o
+__Htext3 0 0 ABS 0 text3 dist/default/debug\projectFinal.X.debug.o
+__Htext4 0 0 ABS 0 text4 dist/default/debug\projectFinal.X.debug.o
+__Htext5 0 0 ABS 0 text5 dist/default/debug\projectFinal.X.debug.o
+__Htext6 0 0 ABS 0 text6 dist/default/debug\projectFinal.X.debug.o
+__Htext7 0 0 ABS 0 text7 dist/default/debug\projectFinal.X.debug.o
+__Htext8 0 0 ABS 0 text8 dist/default/debug\projectFinal.X.debug.o
+__Htext9 0 0 ABS 0 text9 dist/default/debug\projectFinal.X.debug.o
+__Hbigbss 0 0 BIGRAM 1 bigbss dist/default/debug\projectFinal.X.debug.o
+__Hbigram 0 0 ABS 0 bigram dist/default/debug\projectFinal.X.debug.o
+__smallconst 300 0 SMALLCONST 0 smallconst C:\Users\yn2217\AppData\Local\Temp\sj5o.o
+__Hcomram 0 0 ABS 0 comram dist/default/debug\projectFinal.X.debug.o
+__Hconfig 30000E 0 CONFIG 0 config dist/default/debug\projectFinal.X.debug.o
+__Lbank0 0 0 ABS 0 bank0 dist/default/debug\projectFinal.X.debug.o
+__Lbank1 0 0 ABS 0 bank1 dist/default/debug\projectFinal.X.debug.o
+__Lbank2 0 0 ABS 0 bank2 dist/default/debug\projectFinal.X.debug.o
+__Lcinit 0 0 ABS 0 cinit dist/default/debug\projectFinal.X.debug.o
+__Lconst 0 0 CONST 0 const dist/default/debug\projectFinal.X.debug.o
+__Lidata 0 0 CODE 0 idata dist/default/debug\projectFinal.X.debug.o
+__Lidloc 200000 0 IDLOC 0 idloc dist/default/debug\projectFinal.X.debug.o
+__Lnvbit 0 0 COMRAM 1 nvbit dist/default/debug\projectFinal.X.debug.o
+__Lparam 0 0 COMRAM 1 rparam dist/default/debug\projectFinal.X.debug.o
+__Lrdata 0 0 COMRAM 1 rdata dist/default/debug\projectFinal.X.debug.o
+__Lstack 0 0 STACK 2 stack dist/default/debug\projectFinal.X.debug.o
+__Ltext0 0 0 ABS 0 text0 dist/default/debug\projectFinal.X.debug.o
+__Ltext1 0 0 ABS 0 text1 dist/default/debug\projectFinal.X.debug.o
+__Ltext2 0 0 ABS 0 text2 dist/default/debug\projectFinal.X.debug.o
+__Ltext3 0 0 ABS 0 text3 dist/default/debug\projectFinal.X.debug.o
+__Ltext4 0 0 ABS 0 text4 dist/default/debug\projectFinal.X.debug.o
+__Ltext5 0 0 ABS 0 text5 dist/default/debug\projectFinal.X.debug.o
+__Ltext6 0 0 ABS 0 text6 dist/default/debug\projectFinal.X.debug.o
+__Ltext7 0 0 ABS 0 text7 dist/default/debug\projectFinal.X.debug.o
+__Ltext8 0 0 ABS 0 text8 dist/default/debug\projectFinal.X.debug.o
+__Ltext9 0 0 ABS 0 text9 dist/default/debug\projectFinal.X.debug.o
+__Hfarbss 0 0 FARRAM 0 farbss dist/default/debug\projectFinal.X.debug.o
+__size_ofi1_E_TOG 0 0 ABS 0 - dist/default/debug\projectFinal.X.debug.o
+__Lintcode_body 0 0 ABS 0 intcode_body dist/default/debug\projectFinal.X.debug.o
+__end_of_my_hp_isr BE0 0 CODE 0 intcode_body dist/default/debug\projectFinal.X.debug.o
+_INTCONbits FF2 0 ABS 0 - dist/default/debug\projectFinal.X.debug.o
+__Habs1 0 0 ABS 0 abs1 dist/default/debug\projectFinal.X.debug.o
+__Hdata 0 0 ABS 0 data dist/default/debug\projectFinal.X.debug.o
+__Hinit 94 0 CODE 0 init dist/default/debug\projectFinal.X.debug.o
+__Hrbit 0 0 COMRAM 1 rbit dist/default/debug\projectFinal.X.debug.o
+__Hrbss 0 0 COMRAM 1 rbss dist/default/debug\projectFinal.X.debug.o
+__Htemp 34 0 COMRAM 1 temp dist/default/debug\projectFinal.X.debug.o
+__Htext 0 0 ABS 0 text dist/default/debug\projectFinal.X.debug.o
+__Labs1 0 0 ABS 0 abs1 dist/default/debug\projectFinal.X.debug.o
+__Ldata 0 0 ABS 0 data dist/default/debug\projectFinal.X.debug.o
+__Linit 90 0 CODE 0 init dist/default/debug\projectFinal.X.debug.o
+__Lrbit 0 0 COMRAM 1 rbit dist/default/debug\projectFinal.X.debug.o
+__Lrbss 0 0 COMRAM 1 rbss dist/default/debug\projectFinal.X.debug.o
+__Ltemp 33 0 COMRAM 1 temp dist/default/debug\projectFinal.X.debug.o
+__Ltext 0 0 ABS 0 text dist/default/debug\projectFinal.X.debug.o
+___wmul F64 0 CODE 0 text5 dist/default/debug\projectFinal.X.debug.o
+__size_of_my_hp_isr 0 0 ABS 0 - dist/default/debug\projectFinal.X.debug.o
+_robotOn 1D0 0 BANK1 1 bssBANK1 dist/default/debug\projectFinal.X.debug.o
+__LcstackBANK1 0 0 ABS 0 cstackBANK1 dist/default/debug\projectFinal.X.debug.o
+int$flags 33 0 COMRAM 1 temp dist/default/debug\projectFinal.X.debug.o
+__HcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/debug\projectFinal.X.debug.o
+__Hintret 0 0 ABS 0 intret dist/default/debug\projectFinal.X.debug.o
+__Hirdata 0 0 CODE 0 irdata dist/default/debug\projectFinal.X.debug.o
+__S0 30000E 0 ABS 0 - dist/default/debug\projectFinal.X.debug.o
+__S1 1E4 0 ABS 0 - dist/default/debug\projectFinal.X.debug.o
+__S2 0 0 ABS 0 - dist/default/debug\projectFinal.X.debug.o
+__end_of_my_lp_isr 90 0 CODE 0 intcodelo dist/default/debug\projectFinal.X.debug.o
+__size_of_my_lp_isr 0 0 ABS 0 - dist/default/debug\projectFinal.X.debug.o
+__size_of_SendLCD 0 0 ABS 0 - dist/default/debug\projectFinal.X.debug.o
+__size_of_SetLine 0 0 ABS 0 - dist/default/debug\projectFinal.X.debug.o
+_my_hp_isr 8 0 CODE 0 intcode dist/default/debug\projectFinal.X.debug.o
+setMotorsFullSpeed@mL 21 0 COMRAM 1 cstackCOMRAM dist/default/debug\projectFinal.X.debug.o
+setMotorsFullSpeed@mR 23 0 COMRAM 1 cstackCOMRAM dist/default/debug\projectFinal.X.debug.o
+__HidataCOMRAM 0 0 ABS 0 idataCOMRAM dist/default/debug\projectFinal.X.debug.o
+__Lbigdata 0 0 BIGRAM 1 bigdata dist/default/debug\projectFinal.X.debug.o
+__Hnvrram 0 0 COMRAM 1 nvrram dist/default/debug\projectFinal.X.debug.o
+int_func B68 0 CODE 0 intcode_body dist/default/debug\projectFinal.X.debug.o
+LCDout@number 15 0 COMRAM 1 cstackCOMRAM dist/default/debug\projectFinal.X.debug.o
+__Lintentry 0 0 ABS 0 intentry dist/default/debug\projectFinal.X.debug.o
+_my_lp_isr 18 0 CODE 0 intcodelo dist/default/debug\projectFinal.X.debug.o
+move@dir 2A 0 COMRAM 1 cstackCOMRAM dist/default/debug\projectFinal.X.debug.o
+__Hramtop 300 0 RAM 0 ramtop dist/default/debug\projectFinal.X.debug.o
+_initEusart FCA 0 CODE 0 text12 dist/default/debug\projectFinal.X.debug.o
+__Hrparam 0 0 COMRAM 1 rparam dist/default/debug\projectFinal.X.debug.o
+_initIR F8E 0 CODE 0 text11 dist/default/debug\projectFinal.X.debug.o
+__pdataBANK1 1E3 0 BANK1 1 dataBANK1 dist/default/debug\projectFinal.X.debug.o
+__activetblptr 1 0 ABS 0 - dist/default/debug\projectFinal.X.debug.o
+__Hstruct 0 0 COMRAM 1 struct dist/default/debug\projectFinal.X.debug.o
+__size_of___wmul 0 0 ABS 0 - dist/default/debug\projectFinal.X.debug.o
+__LbssBANK1 0 0 ABS 0 bssBANK1 dist/default/debug\projectFinal.X.debug.o
+__size_of_sendRFID 0 0 ABS 0 - dist/default/debug\projectFinal.X.debug.o
+__Htext10 0 0 ABS 0 text10 dist/default/debug\projectFinal.X.debug.o
+__Htext11 0 0 ABS 0 text11 dist/default/debug\projectFinal.X.debug.o
+__Htext12 0 0 ABS 0 text12 dist/default/debug\projectFinal.X.debug.o
+__Htext13 0 0 ABS 0 text13 dist/default/debug\projectFinal.X.debug.o
+__Htext15 0 0 ABS 0 text15 dist/default/debug\projectFinal.X.debug.o
+__Htext16 0 0 ABS 0 text16 dist/default/debug\projectFinal.X.debug.o
+__Htext17 0 0 ABS 0 text17 dist/default/debug\projectFinal.X.debug.o
+__Htext18 0 0 ABS 0 text18 dist/default/debug\projectFinal.X.debug.o
+__Htext19 0 0 ABS 0 text19 dist/default/debug\projectFinal.X.debug.o
+__Htext20 0 0 ABS 0 text20 dist/default/debug\projectFinal.X.debug.o
+__Htext21 0 0 ABS 0 text21 dist/default/debug\projectFinal.X.debug.o
+_RFIDread 1CF 0 BANK1 1 bssBANK1 dist/default/debug\projectFinal.X.debug.o
+i1SendLCD@HighBits 6 0 COMRAM 1 cstackCOMRAM dist/default/debug\projectFinal.X.debug.o
+_RCSTAbits FAB 0 ABS 0 - dist/default/debug\projectFinal.X.debug.o
+_motorL 1DA 0 BANK1 1 bssBANK1 dist/default/debug\projectFinal.X.debug.o
+_motorR 1D1 0 BANK1 1 bssBANK1 dist/default/debug\projectFinal.X.debug.o
+__ptext10 FE2 0 CODE 0 text10 dist/default/debug\projectFinal.X.debug.o
+__ptext11 F8E 0 CODE 0 text11 dist/default/debug\projectFinal.X.debug.o
+__ptext12 FCA 0 CODE 0 text12 dist/default/debug\projectFinal.X.debug.o
+__ptext13 E32 0 CODE 0 text13 dist/default/debug\projectFinal.X.debug.o
+__ptext15 97A 0 CODE 0 text15 dist/default/debug\projectFinal.X.debug.o
+__ptext16 FAC 0 CODE 0 text16 dist/default/debug\projectFinal.X.debug.o
+__ptext17 D9A 0 CODE 0 text17 dist/default/debug\projectFinal.X.debug.o
+__ptext18 D4A 0 CODE 0 text18 dist/default/debug\projectFinal.X.debug.o
+__ptext19 F2C 0 CODE 0 text19 dist/default/debug\projectFinal.X.debug.o
+__ptext20 EB8 0 CODE 0 text20 dist/default/debug\projectFinal.X.debug.o
+__ptext21 FF0 0 CODE 0 text21 dist/default/debug\projectFinal.X.debug.o
+__pintcode_body B68 0 CODE 0 intcode_body dist/default/debug\projectFinal.X.debug.o
+__Lbigbss 0 0 BIGRAM 1 bigbss dist/default/debug\projectFinal.X.debug.o
+__Lbigram 0 0 ABS 0 bigram dist/default/debug\projectFinal.X.debug.o
+__Lcomram 0 0 ABS 0 comram dist/default/debug\projectFinal.X.debug.o
+__Lconfig 300000 0 CONFIG 0 config dist/default/debug\projectFinal.X.debug.o
+___wmul@multiplier 13 0 COMRAM 1 cstackCOMRAM dist/default/debug\projectFinal.X.debug.o
+_LATAbits F89 0 ABS 0 - dist/default/debug\projectFinal.X.debug.o
+_LATBbits F8A 0 ABS 0 - dist/default/debug\projectFinal.X.debug.o
+_LATCbits F8B 0 ABS 0 - dist/default/debug\projectFinal.X.debug.o
+_LATDbits F8C 0 ABS 0 - dist/default/debug\projectFinal.X.debug.o
+__end_ofi1_E_TOG FFE 0 CODE 0 text21 dist/default/debug\projectFinal.X.debug.o
+_currentVal 30 0 COMRAM 1 bssCOMRAM dist/default/debug\projectFinal.X.debug.o
+__size_of_LCD_String 0 0 ABS 0 - dist/default/debug\projectFinal.X.debug.o
+main@path 100 0 BANK1 1 cstackBANK1 dist/default/debug\projectFinal.X.debug.o
+__Lfarbss 0 0 FARRAM 0 farbss dist/default/debug\projectFinal.X.debug.o
+__Lfardata 0 0 FARRAM 0 fardata dist/default/debug\projectFinal.X.debug.o
+setMotorPWM@PWMduty 1F 0 COMRAM 1 cstackCOMRAM dist/default/debug\projectFinal.X.debug.o
+_findStrengths E32 0 CODE 0 text13 dist/default/debug\projectFinal.X.debug.o
+__size_of_initIR 0 0 ABS 0 - dist/default/debug\projectFinal.X.debug.o
+__end_of_setMotorsFullSpeed CA0 0 CODE 0 text3 dist/default/debug\projectFinal.X.debug.o
+_getCharSerial FAC 0 CODE 0 text16 dist/default/debug\projectFinal.X.debug.o
+stackhi 2F3 0 ABS 0 - C:\Users\yn2217\AppData\Local\Temp\sj5o.o
+stacklo 1E4 0 ABS 0 - C:\Users\yn2217\AppData\Local\Temp\sj5o.o
+stop@mL 21 0 COMRAM 1 cstackCOMRAM dist/default/debug\projectFinal.X.debug.o
+stop@mR 23 0 COMRAM 1 cstackCOMRAM dist/default/debug\projectFinal.X.debug.o
+__Lintcode 8 0 CODE 0 intcode dist/default/debug\projectFinal.X.debug.o
+__Lintret 0 0 ABS 0 intret dist/default/debug\projectFinal.X.debug.o
+__Lirdata 0 0 CODE 0 irdata dist/default/debug\projectFinal.X.debug.o
+__end_ofi1_SendLCD F64 0 CODE 0 text19 dist/default/debug\projectFinal.X.debug.o
+SendLCD@LowBits 18 0 COMRAM 1 cstackCOMRAM dist/default/debug\projectFinal.X.debug.o
+__CFG_LVP$OFF 0 0 ABS 0 - dist/default/debug\projectFinal.X.debug.o
+__end_of_initEusart FE2 0 CODE 0 text12 dist/default/debug\projectFinal.X.debug.o
+__size_ofi1_SendLCD 0 0 ABS 0 - dist/default/debug\projectFinal.X.debug.o
+__end_of_SendLCD F2C 0 CODE 0 text8 dist/default/debug\projectFinal.X.debug.o
+__Lspace_0 0 0 ABS 0 - dist/default/debug\projectFinal.X.debug.o
+__Lspace_1 0 0 ABS 0 - dist/default/debug\projectFinal.X.debug.o
+__Lspace_2 0 0 ABS 0 - dist/default/debug\projectFinal.X.debug.o
+__end_of_SetLine DE8 0 CODE 0 text17 dist/default/debug\projectFinal.X.debug.o
+_sendRFID 97A 0 CODE 0 text15 dist/default/debug\projectFinal.X.debug.o
+__pbssCOMRAM 2E 0 COMRAM 1 bssCOMRAM dist/default/debug\projectFinal.X.debug.o
+__HcstackBANK1 0 0 ABS 0 cstackBANK1 dist/default/debug\projectFinal.X.debug.o
+_PIR1bits F9E 0 ABS 0 - dist/default/debug\projectFinal.X.debug.o
+__LcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/debug\projectFinal.X.debug.o
+__end_of_setMotorPWM 97A 0 CODE 0 text4 dist/default/debug\projectFinal.X.debug.o
+end_of_initialization E20 0 CODE 0 cinit dist/default/debug\projectFinal.X.debug.o
+__end_of_sendRFID AA2 0 CODE 0 text15 dist/default/debug\projectFinal.X.debug.o
+__Lnvrram 0 0 COMRAM 1 nvrram dist/default/debug\projectFinal.X.debug.o
+__Hintentry 0 0 ABS 0 intentry dist/default/debug\projectFinal.X.debug.o
+_RCONbits FD0 0 ABS 0 - dist/default/debug\projectFinal.X.debug.o
+i1_SendLCD F2C 0 CODE 0 text19 dist/default/debug\projectFinal.X.debug.o
+__Hreset_vec 4 0 CODE 0 reset_vec dist/default/debug\projectFinal.X.debug.o
+_checkSum 2F 0 COMRAM 1 bssCOMRAM dist/default/debug\projectFinal.X.debug.o
+_setMotorsFullSpeed C40 0 CODE 0 text3 dist/default/debug\projectFinal.X.debug.o
+__HbssBANK1 0 0 ABS 0 bssBANK1 dist/default/debug\projectFinal.X.debug.o
+main@rightIR 1CB 0 BANK1 1 cstackBANK1 dist/default/debug\projectFinal.X.debug.o
+_initLCD AA2 0 CODE 0 text7 dist/default/debug\projectFinal.X.debug.o
+_initPWM CA0 0 CODE 0 text6 dist/default/debug\projectFinal.X.debug.o
+__Lramtop 300 0 RAM 0 ramtop dist/default/debug\projectFinal.X.debug.o
+__Lrparam 0 0 COMRAM 1 rparam dist/default/debug\projectFinal.X.debug.o
+__pcinit DE8 0 CODE 0 cinit dist/default/debug\projectFinal.X.debug.o
+__ptext0 30C 0 CODE 0 text0 dist/default/debug\projectFinal.X.debug.o
+__ptext1 CFA 0 CODE 0 text1 dist/default/debug\projectFinal.X.debug.o
+__ptext2 BE0 0 CODE 0 text2 dist/default/debug\projectFinal.X.debug.o
+__ptext3 C40 0 CODE 0 text3 dist/default/debug\projectFinal.X.debug.o
+__ptext4 7AA 0 CODE 0 text4 dist/default/debug\projectFinal.X.debug.o
+__ptext5 F64 0 CODE 0 text5 dist/default/debug\projectFinal.X.debug.o
+__ptext6 CA0 0 CODE 0 text6 dist/default/debug\projectFinal.X.debug.o
+__ptext7 AA2 0 CODE 0 text7 dist/default/debug\projectFinal.X.debug.o
+__ptext8 EF4 0 CODE 0 text8 dist/default/debug\projectFinal.X.debug.o
+__ptext9 E7C 0 CODE 0 text9 dist/default/debug\projectFinal.X.debug.o
+__Lstruct 0 0 COMRAM 1 struct dist/default/debug\projectFinal.X.debug.o
+__Ltext10 0 0 ABS 0 text10 dist/default/debug\projectFinal.X.debug.o
+__Ltext11 0 0 ABS 0 text11 dist/default/debug\projectFinal.X.debug.o
+__Ltext12 0 0 ABS 0 text12 dist/default/debug\projectFinal.X.debug.o
+__Ltext13 0 0 ABS 0 text13 dist/default/debug\projectFinal.X.debug.o
+__Ltext15 0 0 ABS 0 text15 dist/default/debug\projectFinal.X.debug.o
+__Ltext16 0 0 ABS 0 text16 dist/default/debug\projectFinal.X.debug.o
+__Ltext17 0 0 ABS 0 text17 dist/default/debug\projectFinal.X.debug.o
+__Ltext18 0 0 ABS 0 text18 dist/default/debug\projectFinal.X.debug.o
+__Ltext19 0 0 ABS 0 text19 dist/default/debug\projectFinal.X.debug.o
+__Ltext20 0 0 ABS 0 text20 dist/default/debug\projectFinal.X.debug.o
+__Ltext21 0 0 ABS 0 text21 dist/default/debug\projectFinal.X.debug.o
+main@leftIR 1C9 0 BANK1 1 cstackBANK1 dist/default/debug\projectFinal.X.debug.o
+__ramtop 300 0 RAM 0 ramtop C:\Users\yn2217\AppData\Local\Temp\sj5o.o
+__Lpowerup 90 0 CODE 0 powerup dist/default/debug\projectFinal.X.debug.o
+__Leeprom_data 0 0 EEDATA 0 eeprom_data dist/default/debug\projectFinal.X.debug.o
+__psmallconst 300 0 SMALLCONST 0 smallconst dist/default/debug\projectFinal.X.debug.o
+__Lreset_vec 0 0 CODE 0 reset_vec dist/default/debug\projectFinal.X.debug.o
+move@mL 26 0 COMRAM 1 cstackCOMRAM dist/default/debug\projectFinal.X.debug.o
+move@mR 28 0 COMRAM 1 cstackCOMRAM dist/default/debug\projectFinal.X.debug.o
+___param_bank 0 0 ABS 0 - dist/default/debug\projectFinal.X.debug.o
+__Hbigdata 0 0 BIGRAM 1 bigdata dist/default/debug\projectFinal.X.debug.o
+__end_of__initialization E20 0 CODE 0 cinit dist/default/debug\projectFinal.X.debug.o
+__Libigdata 0 0 CODE 0 ibigdata dist/default/debug\projectFinal.X.debug.o
+__pidataBANK1 FFF 0 CODE 0 idataBANK1 dist/default/debug\projectFinal.X.debug.o
+__Lclrtext 0 0 ABS 0 clrtext dist/default/debug\projectFinal.X.debug.o
+__CFG_OSC$IRCIO 0 0 ABS 0 - dist/default/debug\projectFinal.X.debug.o
+__size_of_findStrengths 0 0 ABS 0 - dist/default/debug\projectFinal.X.debug.o
+__size_of_getCharSerial 0 0 ABS 0 - dist/default/debug\projectFinal.X.debug.o
+__pintcodelo 18 0 CODE 0 intcodelo dist/default/debug\projectFinal.X.debug.o
+__pcstackCOMRAM 1 0 COMRAM 1 cstackCOMRAM dist/default/debug\projectFinal.X.debug.o
+_TXSTAbits FAC 0 ABS 0 - dist/default/debug\projectFinal.X.debug.o
+__end_of_main 7AA 0 CODE 0 text0 dist/default/debug\projectFinal.X.debug.o
+__end_of_move D4A 0 CODE 0 text1 dist/default/debug\projectFinal.X.debug.o
+__end_of_stop C40 0 CODE 0 text2 dist/default/debug\projectFinal.X.debug.o
+__pintcode 8 0 CODE 0 intcode dist/default/debug\projectFinal.X.debug.o
+__end_of_E_TOG FF0 0 CODE 0 text10 dist/default/debug\projectFinal.X.debug.o
+_E_TOG FE2 0 CODE 0 text10 dist/default/debug\projectFinal.X.debug.o
+_CAP2CON F62 0 ABS 0 - dist/default/debug\projectFinal.X.debug.o
+_CAP3CON F61 0 ABS 0 - dist/default/debug\projectFinal.X.debug.o
+_PDC0H F78 0 ABS 0 - dist/default/debug\projectFinal.X.debug.o
+_PDC0L F79 0 ABS 0 - dist/default/debug\projectFinal.X.debug.o
+_PDC1H F76 0 ABS 0 - dist/default/debug\projectFinal.X.debug.o
+_PDC1L F77 0 ABS 0 - dist/default/debug\projectFinal.X.debug.o
+_PDC2H F74 0 ABS 0 - dist/default/debug\projectFinal.X.debug.o
+_PDC2L F75 0 ABS 0 - dist/default/debug\projectFinal.X.debug.o
+_PDC3H F72 0 ABS 0 - dist/default/debug\projectFinal.X.debug.o
+_PDC3L F73 0 ABS 0 - dist/default/debug\projectFinal.X.debug.o
+_RCREG FAE 0 ABS 0 - dist/default/debug\projectFinal.X.debug.o
+_SPBRG FAF 0 ABS 0 - dist/default/debug\projectFinal.X.debug.o
+_T5CON FB7 0 ABS 0 - dist/default/debug\projectFinal.X.debug.o
+_TXREG FAD 0 ABS 0 - dist/default/debug\projectFinal.X.debug.o
+__HRAM 0 0 ABS 0 - dist/default/debug\projectFinal.X.debug.o
+__Hbss 0 0 RAM 1 bss dist/default/debug\projectFinal.X.debug.o
+__Hram 0 0 ABS 0 ram dist/default/debug\projectFinal.X.debug.o
+__Hsfr 0 0 ABS 0 sfr dist/default/debug\projectFinal.X.debug.o
+__LRAM 1 0 ABS 0 - dist/default/debug\projectFinal.X.debug.o
+__Lbss 0 0 RAM 1 bss dist/default/debug\projectFinal.X.debug.o
+__Lram 0 0 ABS 0 ram dist/default/debug\projectFinal.X.debug.o
+__Lsfr 0 0 ABS 0 sfr dist/default/debug\projectFinal.X.debug.o
+_index 32 0 COMRAM 1 dataCOMRAM dist/default/debug\projectFinal.X.debug.o
+_reset 1E3 0 BANK1 1 dataBANK1 dist/default/debug\projectFinal.X.debug.o
+_debouncer 31 0 COMRAM 1 bssCOMRAM dist/default/debug\projectFinal.X.debug.o
+__HdataBANK1 0 0 ABS 0 dataBANK1 dist/default/debug\projectFinal.X.debug.o
+__end_of_findStrengths E7C 0 CODE 0 text13 dist/default/debug\projectFinal.X.debug.o
+__end_of_getCharSerial FCA 0 CODE 0 text16 dist/default/debug\projectFinal.X.debug.o
+__initialization DE8 0 CODE 0 cinit dist/default/debug\projectFinal.X.debug.o
+__pbssBANK1 1CE 0 BANK1 1 bssBANK1 dist/default/debug\projectFinal.X.debug.o
+__pdataCOMRAM 32 0 COMRAM 1 dataCOMRAM dist/default/debug\projectFinal.X.debug.o
+__Hfardata 0 0 FARRAM 0 fardata dist/default/debug\projectFinal.X.debug.o
+___wmul@product 17 0 COMRAM 1 cstackCOMRAM dist/default/debug\projectFinal.X.debug.o
+__Hsmallconst 30C 0 SMALLCONST 0 smallconst dist/default/debug\projectFinal.X.debug.o
+__Lifardata 0 0 CODE 0 ifardata dist/default/debug\projectFinal.X.debug.o
+__Hintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/debug\projectFinal.X.debug.o
+__Hintcode E 0 CODE 0 intcode dist/default/debug\projectFinal.X.debug.o
+__size_of_setMotorPWM 0 0 ABS 0 - dist/default/debug\projectFinal.X.debug.o
+SendLCD@Byte 19 0 COMRAM 1 cstackCOMRAM dist/default/debug\projectFinal.X.debug.o
+SendLCD@type 16 0 COMRAM 1 cstackCOMRAM dist/default/debug\projectFinal.X.debug.o
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+intcodelo 0 18 18 7C 1
+idloc 0 200000 200000 8 1
+text0 0 30C 30C CF4 1
+cstackCOMRAM 1 1 1 33 1
+cstackBANK1 1 100 100 E4 1
+reset_vec 0 0 0 4 1
+intcode 0 8 8 6 1
+smallconst 0 300 300 C 1
+config 0 300000 300000 E 1
